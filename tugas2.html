@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>Tugas 2</title>
+</head>
+
+<body>
+    <button onclick="validation()">Input</button>
+    <script>
+        function validation() {
+            let input = window.prompt('Input Number (1 - 100) : ', '');
+            if (input >= 80 && input <= 100) {
+                alert("Your grade is A");
+            } else if (input >= 60 && input < 80) {
+                alert("Your grade is B");
+            } else if (input >= 40 && input < 60) {
+                alert("Your grade is C")
+                ''
+            } else if (input >= 0 && input < 40) {
+                alert("Your grade is D")
+            } else {
+                alert("Cannot calculate your grade")
+            }
+        }
+    </script>
+</body>
+
+</html>

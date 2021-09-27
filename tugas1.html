@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>Tugas 1</title>
+</head>
+
+<body>
+    <button onclick="validation()">Input Password</button>
+    <script>
+        function validation() {
+            let Password = "admin123";
+            let input = window.prompt('Input Your Password : ', '');
+            if (input == Password) {
+                alert("Your Password is true");
+            } else {
+                // alert("Your Password is false");
+                window.location = 'http://www.google.com';
+            }
+        }
+    </script>
+</body>
+
+</html>

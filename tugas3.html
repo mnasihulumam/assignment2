@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>Tugas 3</title>
+</head>
+
+<body>
+    <button onclick="validation()">Input</button>
+    <script>
+        function validation() {
+
+            let inputName = window.prompt('Input Your name : ', '');
+            let inputGender = window.prompt('Input Your gender (L / P) : ', '');
+
+            if (inputGender == 'L') {
+                alert("Selamat datang, Mr. " + inputName);
+            } else if (inputGender == 'P') {
+                alert("Selamat datang, Mrs. " + inputName);
+            }
+
+            let inputDrink = window.prompt('Input Your drink (Jus / Other) : ', '');
+
+            if (inputDrink != 'Jus' && inputGender == 'L') {
+                alert("Siap Mr. " + inputName + ", satu " + inputDrink + " segera datang!");
+            } else if (inputDrink != 'Jus' && inputGender == 'P') {
+                alert("Siap Mrs. " + inputName + ", satu " + inputDrink + " segera datang!");
+            } else if (inputDrink == 'Jus') {
+                alert("Mohon maaf, Jus tidak tersedia");
+            }
+        }
+    </script>
+</body>
+
+</html>
